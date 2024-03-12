@@ -1,0 +1,57 @@
+.rating {
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+}
+.shopping-mall{
+    position: absolute;
+    bottom: 20px;
+    font-variant: small-caps;
+}
+.shopping-mall>h1{
+    font-family: Impact;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+.shopping-mall>h5{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+header{
+    position: relative;
+}
+/* Trong file style.css hoặc thẻ style trong phần head của HTML */
+
+/* Đặt hình nền cho phần article và aside */
+article {
+    background-image: url('img/mau-background-tet-dep-full-hd-9.jpg'); /* Thay đường dẫn này bằng đường dẫn thực tế của hình nền */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px; /* Tăng giảm khoảng cách nếu cần thiết */
+}
+
+aside {
+    background-image: url('img/background.jpg'); /* Thay đường dẫn này bằng đường dẫn thực tế của hình nền */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px; /* Tăng giảm khoảng cách nếu cần thiết */
+}
+footer{
+    background-image: url('img/mau-background-tet-dep-full-hd-9.jpg'); /* Thay đường dẫn này bằng đường dẫn thực tế của hình nền */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px; /* Tăng giảm khoảng cách nếu cần thiết */
+}
+/* Tùy chỉnh màu chữ để đảm bảo đọc được trên hình nền */
+article, aside {
+    color: black; /* Chọn màu chữ phù hợp với hình nền */
+}

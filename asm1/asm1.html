@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Shop DRAGON BALL</title>
+  <style>
+    /* Ẩn form đăng nhập khi chưa được kích hoạt */
+    #loginForm {
+      display: none;
+    }
+
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagination {
+      justify-content: center;
+    }
+
+    .page-item {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="row" style="height: 350px; background-color: black; margin: 0;">
+      <div class="col-sm-7">
+        <div class="shopping-mall">
+          <h1> SHOP DRAGON BALL </h1>
+          <h5> Shop bán những đồ dành cho những fan Dragon Ball</h5>
+        </div>
+      </div>
+      <img style="height: 344px;" class="col-sm-12 d-none d-sm-block float-sm-end"
+        src="img/tai-ngay-100-hinh-anh-7-vien-ngoc-rong-100.jpg">
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Trang
+                chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i> Chi Nhánh
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"> Hà Nội</a></li>
+                <li><a class="dropdown-item" href="#"> Đà Nẵng</a></li>
+                <li><a class="dropdown-item" href="#"> Hồ Chí Minh</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalgiohang"><i
+                  class="bi bi-bag-check-fill"></i> Giỏ hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-question-circle"></i> Hỏi đáp</a>
+            </li>
+            <li>
+              <a class="nav-link" href="contact.html"> <i class="bi bi-telephone"></i> Liên hệ</a>
+            </li>
+            <li>
+              <a class="nav-link" href="news.html"><i class="bi bi-newspaper"></i>Tin tức</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill"></i> Tài Khoản
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="forgotpassword.html">Quên mật khẩu</a></li>
+                <li><a class="dropdown-item" href="register.html">Đăng kí thành viên</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">English</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tiếng Việt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- https://shopee.vn/M%C3%B4-h%C3%ACnh-Dragon-Ball-Songoku-Black-Gogeta-t%C3%B3c-xanh-t%C3%B3c-v%C3%A0ng-h%C3%A0ng-si%C3%AAu-ch%E1%BA%A5t-cao-32cm-figure-m%C3%B4-h%C3%ACnh-7-vi%C3%AAn-ng%E1%BB%8Dc-r%E1%BB%93ng-i.338765008.9259658974?sp_atk=9681cdb4-b87a-4789-b2d8-52091eb86382&xptdk=9681cdb4-b87a-4789-b2d8-52091eb86382 -->
+    <div class="row" style="margin: auto;">
+      <article class="col-sm-9" style="margin-top: 15px;">
+        <div class="row ">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> Mô hình Dragon Ball Songoku Black Gogeta tóc xanh ,tóc vàng hàng
+                siêu chất cao 32cm</div>
+              <div class="card-body text-center"><a href="chitietsp.html"><img src="./img/db1.jpg" alt="" width="170"
+                    height="180"></a></div>
+              <div class="card-footer"> $ 79.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 750g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: Gogeta Songoku</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 2999</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Nam Định</div>
+            </div>
+          </div>
+          <!-- https://shopee.vn/M%C3%B4-h%C3%ACnh-Super-Dragon-Ball-Z-nh%C3%A2n-v%E1%BA%ADt-Songoku-Vegeta-Vegito-Black-Goku-Gogeta-t%C3%B3c-xanh-v%C3%A0ng-Songoku-Yayat-Broly-i.238076890.20536788690?sp_atk=19b69a22-522a-4238-98da-ffdaf1bedd66&xptdk=19b69a22-522a-4238-98da-ffdaf1bedd66 -->
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> Mô hình Super Dragon Ball Z nhân vật Songoku Vegeta Vegito Black
+                Goku Gogeta tóc xanh vàng Songoku</div>
+              <div class="card-body text-center"><a href="chitietsp2.html"><img src="./img/db2.jpg" alt="" width="170"
+                height="180"></a></div>
+              <div class="card-footer"> $ 55.000đ - $ 299.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 550g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: Songoku</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 990</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Hà Nội</div>
+            </div>
+          </div>
+          <!-- https://shopee.vn/M%C3%B4-h%C3%ACnh-Dragon-Ball-chibi-nh%C3%A2n-v%E1%BA%ADt-7-Vi%C3%AAn-Ng%E1%BB%8Dc-R%E1%BB%93ng-Songoku-cao-7cm-Shin-Case-i.89827191.22671013784?sp_atk=8d8e7ee0-4273-40a6-af47-394e8f437a7b&xptdk=8d8e7ee0-4273-40a6-af47-394e8f437a7b -->
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> Mô hình Dragon Ball chibi nhân vật 7 Viên Ngọc Rồng Songoku cao 7cm
+                - Shin Case </div>
+                <div class="card-body text-center"><a href="chitietsp3.html"><img src="./img/db3.jpg" alt="" width="170"
+                  height="180"></a></div>
+              <div class="card-footer"> $ 55.000đ -65.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 550g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: Songoku</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 8150</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Hà Nội</div>
+            </div>
+          </div>
+        </div>
+        <!-- https://shopee.vn/-Full-box-B%E1%BB%99-th%E1%BA%BB-Dragon-Ball-gi%C3%A1-r%E1%BA%BB-32-packs-192-th%E1%BA%BB-th%E1%BA%BB-7-Vi%C3%AAn-Ng%E1%BB%8Dc-R%E1%BB%93ng-i.759928.20078649051?sp_atk=c90ba335-8fa0-4157-9d3e-bff40a311d19&xptdk=c90ba335-8fa0-4157-9d3e-bff40a311d19 -->
+        <div class="row" style="margin-top: 15px;">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> [Full box] Bộ thẻ Dragon Ball giá rẻ 32 packs 192 thẻ - thẻ 7 Viên
+                Ngọc Rồng </div>
+                <div class="card-body text-center"><a href="chitietsp4.html"><img src="./img/db4.jpg" alt="" width="170"
+                  height="180"></a></div>
+              <div class="card-footer"> $ 24.000đ - 56.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 500g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: Ảnh Dragon Ball</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 6500</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Hồ Chí Minh</div>
+            </div>
+          </div>
+          <!-- https://shopee.vn/H%C3%A0ng-M%E1%BB%9Bi-V%E1%BB%81-B%E1%BB%99-T%C6%B0%E1%BB%A3ng-Nh%C3%A2n-V%E1%BA%ADt-Anime-Dragon-Ball-HG-Frieza-Full-Form-Ch%E1%BA%A5t-L%C6%B0%E1%BB%A3ng-Cao-i.1157834345.25756843266?sp_atk=cefd0132-9531-4550-a913-7aee11a3999d&xptdk=cefd0132-9531-4550-a913-7aee11a3999d -->
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> Hàng Mới Về Bộ Tượng Nhân Vật Anime Dragon Ball HG Frieza Full Form
+                Chất Lượng Cao </div>
+                <div class="card-body text-center"><a href="chitietsp5.html"><img src="./img/db5.jpg" alt="" width="170"
+                  height="180"></a></div>
+              <div class="card-footer"> $ 210.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 400g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: Friza đại đế</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 880</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Nước ngoài</div>
+            </div>
+          </div>
+          <!-- https://shopee.vn/M%C3%B4-H%C3%ACnh-Nh%C3%A2n-V%E1%BA%ADt-SON-GOKU-Trong-Phim-Dragon-Ball-B%E1%BA%B1ng-Acrylic-T%C3%B9y-Ch%E1%BB%89nh-%C4%90%E1%BB%99c-%C4%90%C3%A1o-i.1037770484.21782114324?sp_atk=b3924645-ce81-44fd-aad8-bb04da0177c1&xptdk=b3924645-ce81-44fd-aad8-bb04da0177c1 -->
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header text-center"> Mô Hình Nhân Vật SON GOKU Trong Phim Dragon Ball Bằng Acrylic Tùy
+                Chỉnh Độc Đáo</div>
+                <div class="card-body text-center"><a href="chitietsp6.html"><img src="./img/db6.jpg" alt="" width="170"
+                  height="180"></a></div>
+              <div class="card-footer"> $ 94.000đ - $ 360.000đ </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div> <i class="bi bi-record-fill"></i> Chất liệu: PVC, Nhựa </div>
+              <div> <i class="bi bi-record-fill"></i> Trọng lượng: 800g</div>
+              <div> <i class="bi bi-record-fill"></i> Loại bảo hành: Bảo hành nhà cung cấp</div>
+              <div> <i class="bi bi-record-fill"></i> Nhân vật: KAKAROTTO</div>
+              <div> <i class="bi bi-record-fill"></i> Kích thước (dài x rộng x cao): 20x10x10</div>
+              <div> <i class="bi bi-record-fill"></i> Kho hàng: 12960</div>
+              <div> <i class="bi bi-record-fill"></i> Gửi từ: Nước ngoài</div>
+            </div>
+          </div>
+        </div>
+        <article class="col-sm-12">
+          <div class="row">
+            <fieldset class="border p-2">
+              <legend class="w-auto">Hàng liên quan:</legend>
+              <a href="#"><img src="img/dblq1.jpg" width="70" height="100" alt="" class="img-thumbnail mx-2"></a>
+              <a href="#"><img src="img/dblq2.jpg" width="70" height="100" alt="" class="img-thumbnail mx-2"></a>
+              <a href="#"><img src="img/dblq3.jpg" width="70" height="100" alt="" class="img-thumbnail mx-2"></a>
+              <a href="#"><img src="img/dblq4.jpg" width="70" height="100" alt="" class="img-thumbnail mx-2"></a>
+              <a href="#"><img src="img/dblq5.jpg" width="70" height="100" alt="" class="img-thumbnail mx-2"></a>
+            </fieldset>
+          </div>
+        </article>
+        <nav aria-label="Page navigation example" class="pagination-container">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </article>
+      <aside class="col-sm-3" style="margin-top: 15px;">
+        <div class="card poly-cart">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="img/dragonballsuper.webp" alt="DRAGON BALL" width="270" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <form method="post">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Tìm kiếm</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Loại</h5>
+          <div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#" style="text-decoration: none;">Móc Khóa</a>
+              </li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none;">Mô Hình</a>
+              </li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none;">Truyện Tranh</a>
+              </li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none;">Thẻ</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Supplier -->
+          <div class="panel panel-default">
+            <div class="card poly-card">
+              <div class="card-header panel-heading" data-toggle="collapse" data-parent="#accordion"
+                href="#collapseTwo">
+                <i class="bi bi-list-columns-reverse"></i>
+                Nhà cung cấp
+              </div>
+              <ul id="collapseTwo" class="list-group panel-collapse collapse">
+                <!-- List items -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- /Supplier -->
+
+          <!-- Special -->
+          <div class="panel panel-default">
+            <div class="panel panel-default">
+              <div class="card poly-card">
+                <div class="card-header panel-heading" data-toggle="collapse" data-parent="#accordion"
+                  href="#collapseThree">
+                  <i class="bi bi-star"></i>
+                  Hàng đặc biệt
+                </div>
+                <ul id="collapseThree" class="list-group list panel-collapse ">
+                  <!-- class collapse -->
+                  <li class="list-group-item"><a href="#" style="text-decoration: none;">Hàng Bán Chạy</a>
+                  </li>
+                  <li class="list-group-item"><a href="#" style="text-decoration: none;">Hàng Mới</a>
+                  </li>
+                  <li class="list-group-item"><a href="#" style="text-decoration: none;">Hàng Giảm Giá</a>
+                  </li>
+                  <li class="list-group-item"><a href="#" style="text-decoration: none;">Hàng Đặc Biệt</a>
+                  </li>
+                  <li class="list-group-item"><a href="#" style="text-decoration: none;">Hàng Xem Nhiều</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /Special -->
+
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="card text-center">
+        <div class="card-body" style="background-color: gray; color: red;">
+          <h3 class="card-title"> Shop Dragon ball </h3>
+          <p class="card-text"> Shop chuyên cung cấp những phụ kiện cho những pro fan dragon ball </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal fade" id="modalgiohang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="container">
+        <div class="modal fade" id="modalgiohang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- Form Giỏ hàng -->
+        <div class="row" style="color: white;">
+          <div class="row">
+            <h5 class="mb-4">Giỏ hàng của bạn</h5>
+            <table class="table" style="color: white;">
+              <thead>
+                <tr>
+                  <th scope="col">Sản phẩm</th>
+                  <th scope="col">Số lượng</th>
+                  <th scope="col">Giá</th>
+                  <th scope="col">Thành tiền</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Mỗi sản phẩm sẽ là một dòng trong bảng -->
+                <tr>
+                  <td>Mô hình Songoku</td>
+                  <td>
+                    <input type="number" class="form-control" value="10">
+                  </td>
+                  <td>$450.000</td>
+                  <td>$4.500.000</td>
+                  <td>
+                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mô hình Vegeta</td>
+                  <td>
+                    <input type="number" class="form-control" value="10">
+                  </td>
+                  <td>$450.000</td>
+                  <td>$4.500.000</td>
+                  <td>
+                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mô hình Vegito</td>
+                  <td>
+                    <input type="number" class="form-control" value="10">
+                  </td>
+                  <td>$500.000</td>
+                  <td>$5.000.000</td>
+                  <td>
+                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mô hình Gogeta</td>
+                  <td>
+                    <input type="number" class="form-control" value="10">
+                  </td>
+                  <td>$500.000</td>
+                  <td>$5.000.000</td>
+                  <td>
+                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                  </td>
+                </tr>
+                <!-- Các sản phẩm khác tương tự -->
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="card" style="color: black;">
+              <div class="card-body">
+                <h5 class="card-title">Tổng giá trị đơn hàng</h5>
+                <p class="card-text">Tạm tính: $19.000.000</p>
+                <p class="card-text">Thuế (10%): $1.900.000</p>
+                <h6 class="card-subtitle mb-2 text-muted">Tổng cộng: $20.900.000</h6>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<!-- 
+    * Hướng dẫn thực hiện ASM GĐ 1
+- Thực hiện giao diện (layout) trang web bằng Bootstrap 5 (KHÔNG dùng BS4 hoặc BS3)
+- Chủ đề tự do: Khuyến khích thực hiện các trang web bán hàng
+- Thực hiện các trang theo gợi ý và thứ tự ưu tiên sau:
++ Trang chủ                          ***
++ Trang danh mục sản phẩm            ***      
++ Trang chi tiết sản phẩm           *** 1 trang chi tiết 
++ Trang giỏ hàng                    ***
++ Liên hệ/góp ý                     ***
++ Trang đăng nhập/đăng ký           ***
++ Trang quên mật khẩu               ***
++ Trang tin tức                     ***
++ Trang chi tiết tin tức            
++ ...
+- Làm càng nhiều trang (layout) khác nhau, 
+sử dụng càng nhiều thành phần của BS5 điểm sẽ càng cao.
+
+   -->

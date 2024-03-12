@@ -1,0 +1,22 @@
+<div class="row" style="margin: 0;">
+    <article class="col-sm-4" style="background-color: aliceblue; margin-top: 15px;">
+        <img ng-src="{{ product.image }}" alt="" width="450" height="400">
+    </article>
+    <!-- Phần phải (4-8) -->
+    <article class="col-sm-5" style="background-color: aliceblue; margin-top: 15px;">
+        <ul>
+            <li>Tên hàng: {{ product.name }}</li>
+            <li>Đơn giá: ${{ product.price | number }}</li>
+            <li>Kho hàng: Nam Định</li>
+            <li>Chất liệu: Nhựa, PVC</li>
+            <li>Số lượng còn <span class="badge bg-warning text-dark">{{ product.inventory }}</span> cái</li>
+            <li>Giảm giá: <span class="badge bg-info text-dark">{{ product.discount }}%</span></li>
+            <li>Loại:
+                <span class="badge bg-light text-dark" ng-repeat="category in product.categories">{{ category }}</span>
+            </li>
+        </ul>
+    </article>
+    <aside class="col-sm-3" style="margin-top: 15px;">
+        <!-- ... (Phần HTML hiện tại) ... -->
+    </aside>
+</div>
